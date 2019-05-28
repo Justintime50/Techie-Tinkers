@@ -1,4 +1,4 @@
-# Intro
+# Intro to Laravel
 
 Hey there! Let's dive into http://laravel.com, a PHP Framework for Web Artisans.
 

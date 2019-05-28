@@ -1,16 +1,19 @@
 # Techie Tinkers
 
-Welcome to the Techie Tinkers project. Whether you are a techie or just a tinker, we hope you'll find something useful here about programming.
+Welcome to the Techie Tinkers project. Whether you are a techie or just a tinker, I hope you'll find something useful here about programming.
 
-[Learn Laravel](Learn\%20Laravel/intro.md)
+Many of the items you'll see in this project can be simply read; however, to take full advantage, you'll want to clone and play with examples provided.
 
-[Learn Docker](Learn\%20Docker/intro.md)
+1) [Learn Git](Learn\%20Git/intro.md)
 
-[Learn HTML & CSS](Learn\%20HTML\%20&\%20CSS/intro.md)
+2) [Learn HTML & CSS](Learn\%20HTML\%20&\%20CSS)
 
-[Learn Git](Learn\%20Git/intro.md)
+3) [Learn Docker](Learn\%20Docker/intro.md)
+
+4) [Learn Laravel](Learn\%20Laravel/intro.md)
+
 
 ## Contributors
 
-- Justin Hammond
+- [Justin Hammond](https://github.com/Justintime50/)
   - "For the purpose of teaching those who love to learn to code." 
