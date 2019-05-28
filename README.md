@@ -4,13 +4,13 @@ Welcome to the Techie Tinkers project. Whether you are a techie or just a tinker
 
 Many of the items you'll see in this project can be simply read; however, to take full advantage, you'll want to clone and play with examples provided.
 
-1) [Learn Git](Learn\%20Git/intro.md)
+1) [Learn Git](Learn\%20Git)
 
 2) [Learn HTML & CSS](Learn\%20HTML\%20&\%20CSS)
 
-3) [Learn Docker](Learn\%20Docker/intro.md)
+3) [Learn Docker](Learn\%20Docker)
 
-4) [Learn Laravel](Learn\%20Laravel/intro.md)
+4) [Learn Laravel](Learn\%20Laravel)
 
 
 ## Contributors
