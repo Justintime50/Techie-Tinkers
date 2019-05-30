@@ -6,12 +6,15 @@ Many of the items you'll see in this project can be simply read; however, to tak
 
 1) [Learn Git](Learn\%20Git)
 
-2) [Learn HTML & CSS](Learn\%20HTML\%20&\%20CSS)
+2) [Learn Docker](Learn\%20Docker)
 
-3) [Learn Docker](Learn\%20Docker)
+3) [Learn Laravel](Learn\%20Laravel)
 
-4) [Learn Laravel](Learn\%20Laravel)
 
+## Additional Resources
+
+- **HTML/CSS:** We won't go into much details here about HTML or CSS, but a good beginners reference for HTML and CSS can be found here: [W3Schools](https://www.w3schools.com/html/default.asp). We don't recommend using W3Schools for other programming languages as some of their examples are outdated or prone to security vulnerabilities, but they do a good job of HTML/CSS intro.
+- **Semantic Versioning:** It's a great idea to learn how semantic versioning works. Check that out here: https://semver.org
 
 ## Contributors
 
