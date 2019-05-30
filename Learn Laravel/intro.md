@@ -2,24 +2,38 @@
 
 Hey there! Let's dive into http://laravel.com, a PHP Framework for Web Artisans.
 
-Let's call your root directory `client` (replace this name with whatever your project folder is titled.) 
+We've setup a blank installation of laravel for you here, feel free to dive in after learning a bit below and adding a new page.
 
-Inside this folder is a `laravel` folder which is basically everything you'll need. Anything not in the `laravel` folder is typically required for the server. We'll leave these alone for now.
+**Practice Learning Laravel:** Pull the repo, navigate to the director of this project, (Learn Laravel) and run `docker-compose up -d` and access Laravel at `localhost:8080` in your browser.
+
+## Folder Structure
+
+Let's call your root directory `client` (our root folder for this project is titled `Learn Laravel`) (replace this name with whatever your project folder is titled.) 
+
+Inside this folder is a `laravel` folder which houses everything the app should need. Anything not in the `laravel` folder is typically required for the server. We'll leave these alone for now. These items can be learned about in our `Learn Docker` section.
 
 Inside `laravel`, you'll notice a bunch of different folders. Let's discuss them here:
 
-- `bootstrap` folder - this is NOT the Bootstrap JS/CSS Framework that can be found at http://getbootstrap.com.
+- `/app` - Contains our `Controllers, Models, and Middleware`. We'll discuss these in depth later.
+- `/bootstrap` - this is NOT the Bootstrap JS/CSS Framework that can be found at http://getbootstrap.com. Instead, this is where laravel pulls in various files to run.
+- `/config` - We can declare app variables and other configuration items here.
+- `/database` - This folder houses our migrations and seeds.
+- `/public` - This is where public front-end files are housed such as js and css, pictures, files, etc.
+- `/resources` - Along with some files Laravel needs, we find the `views` folder here which is where our pages are located.
+- `/routes` - The `web` file is particularly important here as it tells Laravel where to route traffic. More on this below.
+- `/storage` - Here we can store files for recall later such as a profile picture. `Logs` are also stored here.
+- `/tests` - Unknown
+- `/vendor` - Laravel stores dependencies here. Other dependencies can be installed at anytime. 
 - Most of the folders for simplicity sake you can ignore for now. The two you'll want to pay special attention to are `public` and `resources/views`
-- The `public` folder is where all the assets go. (css, pictures, js, etc.) Sass files that compile into CSS files are stored here. You'll open the `scss` folder in the `public` folder (make sure it's in public, laravel has it's own sass files in other folders.) The sass files here compile into css files in the css folder.
-- Then, in the `resources/views` folder, that's where you'll find all the actual pages. They are called `blade` files - these are basically php files with a few extra perks (don't worry about it for now) - as I'm sure you know, .php files allow you to run normal html and php in the same file, so we only ever use php files.
 
 ## MVC
 
 Laravel is an MVC (model, view, controller) framework. The model declares something, the controller says what to do with it, and the view is the output (pages).
 
-SO, we won't go over the M or the C part yet, but if you don't declare a page in the `web` file, the page won't be accessible.
+### Views
+Views are the actual pages. They are called `blade` files - these are basically php files with a few extra perks which we'll dive into more elsewhere. - `.php` files allow you to run normal html and php in the same file, so we only ever use php files.
 
-So a typical page declaration looks like this:
+If you don't declare a page in the `/routes/web` file, the page won't be accessible. A typical page declaration looks like this:
 
 ```
 Route::get('/for-sale', function () {
@@ -27,7 +41,13 @@ Route::get('/for-sale', function () {
 });
 ```
 
-The above says - if someone goes to the route `/for-sale` (eg: mysite.com/for-sale) then find the `/for-sale` page in the `views` folder.
+The above says - if someone goes to the route `/for-sale` (eg: mysite.com/for-sale) then find the `/for-sale` page in the `views` folder and return that page.
+
+### Models
+Models define a database and what's accessible from that database. We'll cover this more later.
+
+### Controllers
+Controllers tell Laravel what to do, they are they blueprints for your commands. They can simply return a page or they can be used to create, edit, or delete records. We'll explore this more later.
 
 Sweet! So now you know where the pages are, where the assets are, and how to link a page in laravel if needed. That's laravel at its most basic level.
 
