@@ -2,6 +2,10 @@
 
 Hey there, let's learn about Git! Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is easy to learn and has a tiny footprint with lightning fast performance.
 
+## Installation
+
+First, let's install Git: https://gist.github.com/derhuerst/1b15ff4652a867391f03. If you've installed git, we can move on and clone this Github project.
+
 ## Repositories
 
 You may have heard of popular repository hosting services such as Github, Gitlab or Amazon's CodeCommit. These are all servicces that house your code in a repository, version controlled, and readily accessible to those with access. Doing so through the powerful program of Git allows users to push and pull data quickly and collaboratively.

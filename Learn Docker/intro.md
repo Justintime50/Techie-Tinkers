@@ -2,6 +2,10 @@
 
 Hey there, let's learn about Docker! Docker allows you to "securely build, share and run any application, anywhere." Docker does this by creating `containers` that your application runs in, similar to a `virtual machine`. You can call commands to build your application the exact same way, regardless of where it's running or on what device.
 
+## Installation
+
+Let's start by installing Docker: https://docs.docker.com/install/. Once you've installed Docker, run the following command in a terminal: `docker run hello-world`. If you installed this correctly, Docker will startup a simple "Hello World" container.
+
 ## Dockerfile
 
 For the purposes of today's lesson, we won't dive into what a Dockerfile does. Simply put, a `Dockerfile` is the skeleton of commands for how to build a `Docker Image`.
