@@ -4,6 +4,35 @@ Hey there! Let's dive into http://laravel.com, a PHP Framework for Web Artisans.
 
 We've setup a blank installation of laravel for you here, feel free to dive in after learning a bit below and adding a new page.
 
+## Installation
+To setup this blank Laravel installation, you'll need to setup your .env variables. Use the .env.example template file for the basic setup. These are found in the laravel folder.
+
+1) Install project dependencies. Navigate to the directory of the project.
+
+```
+$ php composer.phar install
+
+OR
+
+$ composer install
+```
+
+2) Generate a Laravel Key
+```
+$ php artisan key:generate
+```
+
+3) Start up docker containers
+```
+$ docker-compose up -d
+```
+
+4) Migrate and create the database
+```
+$ php artisan migrate
+```
+
+
 **Practice Learning Laravel:** Pull the repo, navigate to the director of this project, (Learn Laravel) and run `docker-compose up -d` and access Laravel at `localhost:8080` in your browser.
 
 ## Folder Structure
@@ -15,7 +44,7 @@ Inside this folder is a `laravel` folder which houses everything the app should 
 Inside `laravel`, you'll notice a bunch of different folders. Let's discuss them here:
 
 - `/app` - Contains our `Controllers, Models, and Middleware`. We'll discuss these in depth later.
-- `/bootstrap` - this is NOT the Bootstrap JS/CSS Framework that can be found at http://getbootstrap.com. Instead, this is where laravel pulls in various files to run.
+- `/bootstrap` - this is NOT the [Bootstrap](http://getbootstrap.com) JS/CSS Framework. Instead, this is where laravel pulls in various files to run.
 - `/config` - We can declare app variables and other configuration items here.
 - `/database` - This folder houses our migrations and seeds.
 - `/public` - This is where public front-end files are housed such as js and css, pictures, files, etc.
@@ -36,12 +65,12 @@ Views are the actual pages. They are called `blade` files - these are basically 
 If you don't declare a page in the `/routes/web` file, the page won't be accessible. A typical page declaration looks like this:
 
 ```
-Route::get('/for-sale', function () {
-    return view('for-sale');
+Route::get('/blog', function () {
+    return view('blog');
 });
 ```
 
-The above says - if someone goes to the route `/for-sale` (eg: mysite.com/for-sale) then find the `/for-sale` page in the `views` folder and return that page.
+The above says - if someone goes to the route `/blog` (eg: mysite.com/blog) then find the `/blog` page in the `views` folder and return that page.
 
 ### Models
 Models define a database and what's accessible from that database. We'll cover this more later.

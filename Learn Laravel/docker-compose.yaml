@@ -1,4 +1,4 @@
-version: '3'
+version: "3.7"
 
 services:
 
@@ -10,17 +10,17 @@ services:
             - "8080:80"
         working_dir: /var/www
         volumes:
-            - ./laravel:/var/www
+            - ./laravel:/var/www/html
             - ./nginx.conf:/etc/nginx/conf.d/default.conf
         networks:
             - code-network
 
-    # Use latest PHP FPM to interpret
+    # Use latest PHP-FPM to interpret
     php:
         image: php:fpm
         container_name: learn_laravel_php
         volumes:
-            - ./laravel:/var/www
+            - ./laravel:/var/www/html
         networks:
             - code-network
 
@@ -38,16 +38,14 @@ services:
             SERVICE_TAGS: dev
             SERVICE_NAME: mysql
         volumes:
-            - ./dbdata:/var/lib/mysql/
+            - ./dbdata:/var/lib/mysql
         networks:
             - code-network
 
-# Networks
 networks:
     code-network:
         driver: bridge
 
-# Volumes
 volumes:
     dbdata:
         driver: local
