@@ -4,32 +4,34 @@ Hey there! Let's dive into http://laravel.com, a PHP Framework for Web Artisans.
 
 We've setup a blank installation of laravel for you here, feel free to dive in after learning a bit below and adding a new page.
 
+Laravel provides a great [Quick Start](https://laravel.com/docs/5.1/quickstart) guide that covers many additional pieces of the Framework.
+
 ## Installation
 To setup this blank Laravel installation, you'll need to setup your .env variables. Use the .env.example template file for the basic setup. These are found in the laravel folder.
 
 1) Install project dependencies. Navigate to the directory of the project.
 
 ```
-$ php composer.phar install
+php composer.phar install
 
 OR
 
-$ composer install
+composer install
 ```
 
 2) Generate a Laravel Key
 ```
-$ php artisan key:generate
+php artisan key:generate
 ```
 
 3) Start up docker containers
 ```
-$ docker-compose up -d
+docker-compose up -d
 ```
 
 4) Migrate and create the database
 ```
-$ php artisan migrate
+php artisan migrate
 ```
 
 
@@ -51,8 +53,8 @@ Inside `laravel`, you'll notice a bunch of different folders. Let's discuss them
 - `/resources` - Along with some files Laravel needs, we find the `views` folder here which is where our pages are located.
 - `/routes` - The `web` file is particularly important here as it tells Laravel where to route traffic. More on this below.
 - `/storage` - Here we can store files for recall later such as a profile picture. `Logs` are also stored here.
-- `/tests` - Unknown
-- `/vendor` - Laravel stores dependencies here. Other dependencies can be installed at anytime. 
+- `/tests` - unit tests and functional tests, [more info here](https://laravel.com/docs/5.8/testing).
+- `/vendor` - Laravel files and other dependencies are stored here. 3rd party dependencies can be installed at anytime. The vendor folder contains non-versioned control files.
 - Most of the folders for simplicity sake you can ignore for now. The two you'll want to pay special attention to are `public` and `resources/views`
 
 ## MVC
@@ -86,7 +88,7 @@ In laravel, you can reuse code (actually, you can do that in php using what's ca
 
 Layouts are housed in the `view/layouts` folder.
 
-In many projects, there is an `@extends('layouts.app')` line of code. This says, input the referenced file at the here.
+In many projects, there is an `@extends('layouts.app')` line of code. This creates a dynamic template that returns the current file referenced in extends based on the view the user is on.
 
 In the layout file, you'll see a `@yield('content')` line, that says, input the section's content here. An example, our layout has the dependencies at the top, the nav, then asks for the pages content to be inserted in the middle of all that, then the footer underneath. Layouts makes it really simple to reuse code easily.
 

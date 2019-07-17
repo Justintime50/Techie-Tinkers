@@ -4,7 +4,7 @@ Hey there, let's learn about Docker! Docker allows you to "securely build, share
 
 ## Installation
 
-Let's start by installing Docker: https://docs.docker.com/install/. Once you've installed Docker, run the following command in a terminal: `docker run hello-world`. If you installed this correctly, Docker will startup a simple "Hello World" container.
+Let's start by [installing Docker](https://docs.docker.com/install/). Once you've installed Docker, run the following command in a terminal: `docker run hello-world`. If you installed this correctly, Docker will startup a simple "Hello World" container.
 
 ## Dockerfile
 
